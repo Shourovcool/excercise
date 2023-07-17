@@ -1,0 +1,172 @@
+body {
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+.top-player {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin-top: 3px;
+    color: #562EFF;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 29px;
+
+}
+
+.players img {
+    width: 56px;
+    height: 56px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+hr {
+    width: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+/* top blogs styles */
+.top-blogs {
+    margin-bottom: 25px;
+}
+
+.blogs img {
+    width: 224px;
+    height: 127px;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 13px;
+    column-gap: 70px;
+}
+
+.blogs {
+    display: flex;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.author {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+a {
+    color: #562EFF;
+}
+
+/* latest course styles */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.courses img {
+    width: 266px;
+    height: 141px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating {
+    color: #AEAEAE;
+}
+
+.timer {
+    background-color: #FFE4E8;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 60px;
+    background-color: black;
+}
+
+footer a {
+    color: #ff6363e5;
+    text-decoration: none;
+}
+
+footer p {
+    color: #FFE4E8;
+}
+
+
+/* -----devices views------- */
+/* mobile screen  */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blog,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+    }
+}
+
+/* Ipad Devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blog,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
